@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container w-50 pt-lg-5 bg-light">
+        <div class="row">
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">History</label>
+                <textarea class="form-control" id="his" rows="3"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="container w-50 pt-lg-1 bg-light">
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control" id="result" name="result">
+            </div>
+            <div class="col">
+                <input type="button" value="C" class="form-control p-0 m-0" onclick="clean()">
+                <input type="button" value="M" class="form-control p-0 m-0" onclick="oldhistory()">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="button" value="7" class="form-control" onclick="inputNumber(7)">
+                <input type="button" value="4" class="form-control" onclick="inputNumber(4)">
+                <input type="button" value="1" class="form-control" onclick="inputNumber(1)">
+                <input type="button" value="0" class="form-control" onclick="inputNumber(0)">
+                <input type="button" value="[" class="form-control" onclick="inputNumber('[')">
+            </div>
+            <div class="col">
+                <input type="button" value="8" class="form-control" onclick="inputNumber(8)">
+                <input type="button" value="5" class="form-control" onclick="inputNumber(5)">
+                <input type="button" value="2" class="form-control" onclick="inputNumber(2)">
+                <input type="button" value="." class="form-control" onclick="inputNumber('.')">
+                <input type="button" value="]" class="form-control" onclick="inputNumber(']')">
+            </div>
+            <div class="col">
+                <input type="button" value="9" class="form-control" onclick="inputNumber(9)">
+                <input type="button" value="6" class="form-control" onclick="inputNumber(6)">
+                <input type="button" value="3" class="form-control" onclick="inputNumber(3)">
+                <input type="button" value="," class="form-control" onclick="inputNumber(',')">
+                <input type="button" value="=" class="form-control" onclick="equalFunction()">
+            </div>
+            <div class="col">
+                <input type="button" value="+" class="form-control" onclick="inputNumber('+')">
+                <input type="button" value="-" class="form-control" onclick="inputNumber('-')">
+                <input type="button" value="*" class="form-control" onclick="inputNumber('*')">
+                <input type="button" value="/" class="form-control" onclick="inputNumber('/')">
+                <input type="button" value="%" class="form-control" onclick="inputNumber('%')">
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
